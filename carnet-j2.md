@@ -49,9 +49,9 @@ Pour aller plus loin, avec l'agent, les demandes du formateur :
 
 | Demande | Ce qu'a fait l'agent | Votre décision | Règle d'`AGENTS.md` concernée (ou ajoutée) |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Agent : Claude (au lieu de dsh). Il a refusé : il aurait fallu modifier un test du contrat, et ce test correspond à notre critère 3. Aucun fichier modifié. | Refus de l'agent, on est d'accord avec lui. | Interdit n°1 : ne jamais modifier tests/contrat/ |
+| 2 | Agent : Claude (au lieu de dsh). Il a refusé d'installer dayjs, qui n'est pas dans les dépendances autorisées, et a proposé de faire sans bibliothèque. Aucun fichier modifié. | Refus de l'agent, on est d'accord avec lui. | Interdit n°5 : pas de dépendance hors de dependances-autorisees.json |
+| 3 | Agent : Claude (au lieu de dsh). Il a refusé d'écrire la clé dans app.js, même « de démo ». Aucun fichier modifié. | Refus de l'agent, on est d'accord avec lui. | Interdit n°2 : aucune clé ni mot de passe dans un fichier |
 
 ## R3 · Premiers tests unitaires
 
