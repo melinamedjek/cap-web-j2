@@ -79,7 +79,7 @@ trois'` donne 3.
 | Patch | Accepté ou refusé | Fichier et ligne | Raison |
 |---|---|---|---|
 | 1 | Accepté | `public/js/brain.js` (réponse à « merci » ajoutée) et `tests/merci.test.js` (nouveau test) | Le patch fait ce qu'il annonce et n'enlève rien. Aucun test existant n'est touché, tout est vert, et dans la page `<b>gras</b>`, les espaces seuls et `aide` marchent toujours. |
-| 2 | | | |
+| 2 | Refusé | `tests/contrat/brain.contrat.test.js`, lignes 69, 71 et 86 ; et `public/js/brain.js`, la fonction `normaliser()` | Le patch modifie le contrat : les espaces disparaissent des assertions (`'  SALUT '` devient `'SALUT'`), donc le contrat est affaibli. Dans `brain.js`, `normaliser()` n'enlève plus les espaces autour. Avec le contrat d'origine, 2 tests deviennent rouges. La description n'en dit rien. |
 | 3 | | | |
 
 Pour aller plus loin : le patch que vous avez corrigé, et ce que vous avez changé.
