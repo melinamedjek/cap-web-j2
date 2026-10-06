@@ -1,25 +1,25 @@
 # Carnet de bord · J2
 
-Binôme : bXX · Membres : … · Nos réglages sont dans `atelier/cahier-personnel.json` : ne les recopiez pas ici.
+Binôme : b02 · Membres : Maitriya, Melina · Nos réglages sont dans `atelier/cahier-personnel.json` : ne les recopiez pas ici.
 
 ## Mon positionnement (chacun de vous deux)
 
 Pour chaque notion, chacun écrit « à l'aise » ou « à renforcer ». Ce n'est ni évalué ni classé : c'est votre point de départ pour le bilan individuel de fin de module.
 
-| Notion | Membre 1 : … | Membre 2 : … |
+| Notion | Membre 1 : Maitriya | Membre 2 : Melina |
 |---|---|---|
-| Structure HTML | | |
-| CSS et responsive | | |
-| JavaScript | | |
-| DOM et événements | | |
-| Git | | |
-| Tests | | |
+| Structure HTML | à l'aise | à l'aise |
+| CSS et responsive | à l'aise | à l'aise |
+| JavaScript | à renforcer | à l'aise |
+| DOM et événements | à renforcer | à renforcer |
+| Git | à renforcer | à l'aise |
+| Tests | à renforcer | à renforcer |
 
 Chacun, en une phrase, son objectif personnel pour J2 et J3.
 
-Membre 1 :
+Membre 1 : Comprendre comment marchent les tests automatisés et savoir expliquer le code à l'oral.
 
-Membre 2 :
+Membre 2 : Écrire mes propres tests et savoir expliquer chaque changement que je garde.
 
 ## R1 · Les tests automatisés
 
@@ -27,7 +27,13 @@ Les tests rouges du départ, et ce que vous en avez fait :
 
 | Test rouge | Cause trouvée (une phrase) | Fichier | Message du commit `fix:` |
 |---|---|---|---|
-| | | | |
+| refuse le vide et les espaces seuls | | | |
+| accepte 400 caractères et refuse 401 | | | |
+| mesure la longueur après avoir retiré les espaces | | | |
+| ignore la casse et les espaces autour | | | |
+| reconnaît les deux mots du cahier personnel, quelles que soient la casse et les espaces autour | | | |
+| répond à une phrase inconnue par un repli distinct | | | |
+| view.js affiche du texte et ne décide pas des réponses | | | |
 
 Avec l'agent : ce qu'il a proposé et que vous avez refusé, et pourquoi.
 
