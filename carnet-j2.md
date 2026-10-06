@@ -33,7 +33,7 @@ Les tests rouges du départ, et ce que vous en avez fait :
 | ignore la casse et les espaces autour | Pour choisir la réponse, on mettait le message en minuscules sans enlever les espaces autour, donc « salut » avec des espaces n'était pas reconnu. | `public/js/brain.js` | fix: les majuscules et les espaces autour ne gênent plus la réponse |
 | reconnaît les deux mots du cahier personnel, quelles que soient la casse et les espaces autour | Pour choisir la réponse, on mettait le message en minuscules sans enlever les espaces autour, donc « salut » avec des espaces n'était pas reconnu. | `public/js/brain.js` | fix: les majuscules et les espaces autour ne gênent plus la réponse |
 | répond à une phrase inconnue par un repli distinct | Une phrase inconnue recevait la même réponse que « aide », alors qu'elle doit avoir sa propre réponse. | `public/js/brain.js` | fix: une phrase inconnue reçoit sa propre réponse |
-| view.js affiche du texte et ne décide pas des réponses | | | |
+| view.js affiche du texte et ne décide pas des réponses | L'affichage mettait le message dans la page comme du HTML, donc un message avec des balises était interprété au lieu d'être montré tel quel. | `public/js/view.js` | fix: les messages s'affichent comme du texte, sans HTML |
 
 Avec l'agent : ce qu'il a proposé et que vous avez refusé, et pourquoi.
 
