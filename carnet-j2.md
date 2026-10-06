@@ -32,7 +32,7 @@ Les tests rouges du départ, et ce que vous en avez fait :
 | mesure la longueur après avoir retiré les espaces | La vérification de la longueur utilisait le nombre 280 écrit en dur au lieu de notre limite. | `public/js/brain.js` | fix: la longueur maximale suit notre limite |
 | ignore la casse et les espaces autour | Pour choisir la réponse, on mettait le message en minuscules sans enlever les espaces autour, donc « salut » avec des espaces n'était pas reconnu. | `public/js/brain.js` | fix: les majuscules et les espaces autour ne gênent plus la réponse |
 | reconnaît les deux mots du cahier personnel, quelles que soient la casse et les espaces autour | Pour choisir la réponse, on mettait le message en minuscules sans enlever les espaces autour, donc « salut » avec des espaces n'était pas reconnu. | `public/js/brain.js` | fix: les majuscules et les espaces autour ne gênent plus la réponse |
-| répond à une phrase inconnue par un repli distinct | | | |
+| répond à une phrase inconnue par un repli distinct | Une phrase inconnue recevait la même réponse que « aide », alors qu'elle doit avoir sa propre réponse. | `public/js/brain.js` | fix: une phrase inconnue reçoit sa propre réponse |
 | view.js affiche du texte et ne décide pas des réponses | | | |
 
 Avec l'agent : ce qu'il a proposé et que vous avez refusé, et pourquoi.
