@@ -78,7 +78,7 @@ trois'` donne 3.
 
 | Patch | Accepté ou refusé | Fichier et ligne | Raison |
 |---|---|---|---|
-| 1 | | | |
+| 1 | Accepté | `public/js/brain.js` (réponse à « merci » ajoutée) et `tests/merci.test.js` (nouveau test) | Le patch fait ce qu'il annonce et n'enlève rien. Aucun test existant n'est touché, tout est vert, et dans la page `<b>gras</b>`, les espaces seuls et `aide` marchent toujours. |
 | 2 | | | |
 | 3 | | | |
 
