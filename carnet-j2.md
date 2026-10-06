@@ -12,7 +12,7 @@ Pour chaque notion, chacun écrit « à l'aise » ou « à renforcer ». Ce n'es
 | CSS et responsive | à l'aise | à l'aise |
 | JavaScript | à renforcer | à l'aise |
 | DOM et événements | à renforcer | à renforcer |
-| Git | à renforcer | à l'aise |
+| Git | à renforcer | à renforcer |
 | Tests | à renforcer | à renforcer |
 
 Chacun, en une phrase, son objectif personnel pour J2 et J3.
@@ -90,4 +90,4 @@ Patch 2 corrigé (`abordage/mon-patch.patch`) : contrat remis à l'origine, `nor
 
 Chacun, une phrase : ce que vous savez faire ce soir et que vous ne saviez pas faire ce matin. Relisez votre positionnement : une notion est-elle passée de « à renforcer » à « à l'aise » ?
 Maitriya : J'ai compris la notion de test et son utilité en pratiquant. Ma maîtrise de Git s'est aussi un peu renforcée.
-Melina : Ce soir, je sais lire un test rouge pour trouver l'erreur, écrire un test avant le code, et relire une modification avant de l'accepter. Les tests ne sont plus « à renforcer » pour moi, même si je dois encore m'entraîner à en écrire seule.
+Melina : j'ai des notions sur les tests et j'ai pu progresser sur git 
