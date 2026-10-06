@@ -60,9 +60,9 @@ Pour aller plus loin, avec l'agent, les demandes du formateur :
 | Fonction tirée | F2, compterMots : compte les mots d'un message |
 | Le rouge vu (message exact) | The requested module '../public/js/brain.js' does not provide an export named 'compterMots' |
 | Identifiant du commit `test:` | f141a23 |
-| Identifiant du commit `feat:` | |
-| Casse volontaire : la ligne changée | |
-| Casse volontaire : le test devenu rouge | |
+| Identifiant du commit `feat:` | 4c4f643 |
+| Casse volontaire : la ligne changée | La dernière ligne de compterMots, qui compte les morceaux, remplacée par « toujours répondre 1 ». |
+| Casse volontaire : le test devenu rouge | « C1 : compte un mot, puis plusieurs mots » et « C2 : plusieurs espaces, une tabulation ou un retour à la ligne séparent les mots ». Tout est redevenu vert après avoir remis le code. |
 | Pour aller plus loin : la deuxième fonction | |
 
 Les critères C1 à C5 de votre fonction, recopiés de la fiche :
