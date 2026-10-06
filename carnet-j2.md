@@ -84,7 +84,7 @@ trois'` donne 3.
 
 Pour aller plus loin : le patch que vous avez corrigé, et ce que vous avez changé.
 
-Le patch 2, enregistré dans `abordage/mon-patch.patch`. On a gardé la réponse à « au revoir » et la fonction `normaliser()`. On a remis le contrat comme à l'origine, et `normaliser()` enlève de nouveau les espaces autour avant de mettre en minuscules. Son test vérifie maintenant aussi les espaces (`'  BonJour '` donne `'bonjour'`). Avec le vrai contrat, 46 tests sur 46 sont verts.
+Patch 2 corrigé (`abordage/mon-patch.patch`) : contrat remis à l'origine, `normaliser()` enlève de nouveau les espaces, et son test le vérifie. 46 tests verts.
 
 ## Fin de journée
 
