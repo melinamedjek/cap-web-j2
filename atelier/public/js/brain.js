@@ -60,3 +60,19 @@ export function compterMots(message) {
   }
   return texte.split(/\s+/).length;
 }
+
+const SYNONYMES = {
+  coucou: 'salut',
+  hello: 'salut',
+  bonsoir: 'salut',
+  help: 'aide',
+  sos: 'aide'
+};
+
+export function synonyme(message) {
+  if (typeof message !== 'string') {
+    return '';
+  }
+  const mot = message.trim().toLowerCase();
+  return Object.hasOwn(SYNONYMES, mot) ? SYNONYMES[mot] : mot;
+}
