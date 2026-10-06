@@ -80,10 +80,12 @@ trois'` donne 3.
 |---|---|---|---|
 | 1 | Accepté | `public/js/brain.js` (réponse à « merci » ajoutée) et `tests/merci.test.js` (nouveau test) | Le patch fait ce qu'il annonce et n'enlève rien. Aucun test existant n'est touché, tout est vert, et dans la page `<b>gras</b>`, les espaces seuls et `aide` marchent toujours. |
 | 2 | Refusé | `tests/contrat/brain.contrat.test.js`, lignes 69, 71 et 86 ; et `public/js/brain.js`, la fonction `normaliser()` | Le patch modifie le contrat : les espaces disparaissent des assertions (`'  SALUT '` devient `'SALUT'`), donc le contrat est affaibli. Dans `brain.js`, `normaliser()` n'enlève plus les espaces autour. Avec le contrat d'origine, 2 tests deviennent rouges. La description n'en dit rien. |
-| 3 | | | |
+| 3 | Refusé | `public/js/view.js`, ligne 13 : `createContextualFragment` | Le message est lu comme du HTML, comme avec innerHTML. Dans la page, `<b>gras</b>` s'affiche en gras au lieu de s'afficher tel quel, et un message `<img …>` crée une vraie image. Les tests restent verts parce que le contrat cherche seulement le mot innerHTML. |
 
 Pour aller plus loin : le patch que vous avez corrigé, et ce que vous avez changé.
 
 ## Fin de journée
 
 Chacun, une phrase : ce que vous savez faire ce soir et que vous ne saviez pas faire ce matin. Relisez votre positionnement : une notion est-elle passée de « à renforcer » à « à l'aise » ?
+Maitriya : J'ai compris la notion de test et son utilité en pratiquant. Ma maîtrise de Git s'est aussi un peu renforcée.
+ Melina: 
