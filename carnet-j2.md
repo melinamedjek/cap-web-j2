@@ -134,6 +134,12 @@ Après : la page s'affiche sans erreur, et « version dev » revient en bas.
 
 ![npm test avec le vrai code : tout est vert](captures/j3-etape14-tests-verts.png)
 
+### Bonus 15 · Entrée envoie le message
+
+Un message de deux lignes, écrit avec Maj+Entrée, puis envoyé avec Entrée.
+
+![Message de deux lignes écrit avec Maj+Entrée](captures/j3-etape15-entree.png)
+
 ### Bonus 16 · Le compteur prévient avant la limite
 
 ![Compteur en alerte à 374 / 400, Lighthouse Accessibilité 100](captures/j3-etape16-compteur-lighthouse.png)
