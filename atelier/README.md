@@ -47,3 +47,22 @@ Si PowerShell refuse `npm`, tapez `npm.cmd` à la place.
 - `app.js` relie les deux. Il lit le formulaire, demande à `brain.js` de vérifier et de répondre, garde l'historique, puis demande à `view.js` de l'afficher.
 
 On ne modifie jamais `tests/contrat/`, `browser/contrat.spec.js` ni `cahier-personnel.json`.
+
+## Arborescence
+
+```
+atelier/
+├── public/              la page : ce que voit l'utilisateur
+│   ├── index.html       la structure de la page
+│   ├── styles.css       l'apparence (couleurs, version mobile)
+│   └── js/
+│       ├── brain.js     décide : vérifie le message et choisit la réponse
+│       ├── view.js      affiche la conversation, en texte seulement
+│       └── app.js       relie la page, brain.js, view.js et le serveur
+├── server/              le serveur local
+│   ├── app.js           les adresses : la page, /version.json, /api/conseil
+│   └── start.js         lance le serveur sur le port 3000
+├── tests/               les tests (npm test)
+│   └── contrat/         le contrat : on n'y touche jamais
+└── scripts/             les outils de contrôle (dépendances, tests)
+```
