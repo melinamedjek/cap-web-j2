@@ -39,7 +39,20 @@ function mettreAJourCompteur() {
 
 champ.addEventListener('input', mettreAJourCompteur);
 
-formulaire.addEventListener('submit', (event) => {
+async function demanderConseil() {
+  try {
+    const reponse = await fetch('/api/conseil', { headers: { accept: 'application/json' } });
+    if (!reponse.ok) {
+      throw new Error(`Réponse ${reponse.status}`);
+    }
+    const donnees = await reponse.json();
+    return donnees.conseil;
+  } catch {
+    return 'Le serveur ne répond pas : conseil indisponible.';
+  }
+}
+
+formulaire.addEventListener('submit', async (event) => {
   event.preventDefault();
   const controle = validateMessage(champ.value);
   if (!controle.ok) {
@@ -48,7 +61,8 @@ formulaire.addEventListener('submit', (event) => {
     return;
   }
   historique.push({ role: 'user', text: controle.value });
-  historique.push({ role: 'assistant', text: replyTo(controle.value) });
+  const reponse = controle.value.toLowerCase() === 'conseil' ? await demanderConseil() : replyTo(controle.value);
+  historique.push({ role: 'assistant', text: reponse });
   sauvegarder();
   renderMessages(historique, liste);
   champ.value = '';
