@@ -82,7 +82,6 @@ effacer.addEventListener('click', () => {
 });
 
 // La limite vient de brain.js : un seul endroit à modifier.
-champ.maxLength = LIMITE;
 limiteElt.textContent = String(LIMITE);
 mettreAJourCompteur();
 
