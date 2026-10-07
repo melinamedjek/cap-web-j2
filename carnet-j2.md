@@ -149,3 +149,9 @@ Un message de deux lignes, écrit avec Maj+Entrée, puis envoyé avec Entrée.
 À chaque push, GitHub installe le projet sur une machine neuve, puis lance le lint et les tests. Premier passage : coche verte, en 14 secondes.
 
 ![Onglet Actions : coche verte sur le commit 5f0accf](captures/j3-etape17-ci-verte.png)
+
+### Bonus 18 · La version 1.0.0
+
+![Pied de page : version 1.0.0](captures/j3-etape18-version.png)
+
+![Page Tags de GitHub : v1.0.0](captures/j3-etape18-tags.png)
