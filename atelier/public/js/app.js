@@ -39,6 +39,14 @@ function mettreAJourCompteur() {
 
 champ.addEventListener('input', mettreAJourCompteur);
 
+// Entrée envoie le message, Maj+Entrée va à la ligne.
+champ.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' && !event.shiftKey) {
+    event.preventDefault();
+    formulaire.requestSubmit();
+  }
+});
+
 async function demanderConseil() {
   try {
     const reponse = await fetch('/api/conseil', { headers: { accept: 'application/json' } });
