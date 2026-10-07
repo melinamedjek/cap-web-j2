@@ -117,3 +117,13 @@ Le label est remis.
 ### Étape 5 · Plan B pour la version
 
 Avec une mauvaise adresse, le pied de page affiche « version indisponible » ; avec la bonne, il affiche « version dev ».
+
+### Bonus 13 · Un historique abîmé ne casse plus Cap Web
+
+Avant : avec `[null]` dans le stockage, la page plante (« Cannot read properties of null ») et la version ne s'affiche plus.
+
+![Avant : erreur rouge avec [null]](captures/j3-etape13-avant-bug.png)
+
+Après : la page s'affiche sans erreur, et « version dev » revient en bas.
+
+![Après : plus d'erreur](captures/j3-etape13-apres-correction.png)
