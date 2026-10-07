@@ -127,3 +127,9 @@ Avant : avec `[null]` dans le stockage, la page plante (« Cannot read propertie
 Après : la page s'affiche sans erreur, et « version dev » revient en bas.
 
 ![Après : plus d'erreur](captures/j3-etape13-apres-correction.png)
+
+### Bonus 14 · Un test pour estMessage
+
+![npm test avec return true; : 3 tests rouges](captures/j3-etape14-tests-rouges.png)
+
+![npm test avec le vrai code : tout est vert](captures/j3-etape14-tests-verts.png)
