@@ -124,3 +124,11 @@ footer {
     width: 100%;
   }
 }
+
+/* Le compteur prévient à 90 % de la limite. Fond blanc : sur le fond gris, le rouge n'est pas assez contrasté. */
+#compteur.alerte {
+  color: #b00020;
+  font-weight: 700;
+  background: #ffffff;
+  padding: 0 0.25rem;
+}
