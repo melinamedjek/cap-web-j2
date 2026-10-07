@@ -3,8 +3,8 @@
 ## À quoi sert Cap Web
 
 Cap Web est un petit assistant de discussion qui tourne sur votre poste, pour apprendre le web.
-Il ne réfléchit pas : il suit des règles. Il répond à « salut », « aide », « test » et à deux mots choisis par le binôme.
-Il refuse les messages vides ou trop longs, et affiche les messages comme du texte, jamais comme du HTML.
+Il ne réfléchit pas : il suit des règles. Il répond à « salut », « aide », « test » et aux mots choisis par le binôme, et donne un conseil au hasard quand on écrit « conseil ».
+Il refuse les messages vides ou trop longs, affiche un compteur de caractères, et affiche les messages comme du texte, jamais comme du HTML.
 
 ## Installer et lancer
 
@@ -14,13 +14,20 @@ Il faut Node 24.20 ou plus. Vérifiez votre version :
 node --version
 ```
 
-Ouvrez un terminal dans le dossier `atelier`, puis installez les outils :
+Récupérez le projet, puis entrez dans le dossier `atelier` :
+
+```powershell
+git clone https://github.com/melinamedjek/cap-web-j2.git
+cd cap-web-j2telier
+```
+
+Installez les outils :
 
 ```powershell
 npm ci
 ```
 
-Créez vos réglages à partir de l'exemple, puis ouvrez `cahier-personnel.json` dans l'éditeur pour y mettre votre limite et vos deux mots :
+Les réglages du binôme sont déjà dans `cahier-personnel.json` : n'y touchez pas. Seulement si ce fichier manque, créez-le à partir de l'exemple, puis mettez-y votre limite et vos mots dans l'éditeur :
 
 ```powershell
 Copy-Item cahier-personnel.exemple.json cahier-personnel.json
@@ -32,13 +39,20 @@ Lancez Cap Web, puis ouvrez http://127.0.0.1:3000 dans le navigateur. Ctrl+C l'a
 npm start
 ```
 
-Lancez les tests :
+## Tester
+
+Dans un second terminal, toujours dans `atelier`, lancez les tests puis le vérificateur de code. Les deux doivent finir sans erreur (`fail 0` pour les tests) :
 
 ```powershell
 npm test
+npm run lint
 ```
 
 Si PowerShell refuse `npm`, tapez `npm.cmd` à la place.
+
+## La route `/api/conseil`
+
+Le serveur répond à http://127.0.0.1:3000/api/conseil avec un conseil tiré au hasard, en JSON, par exemple `{"conseil":"Relis ton diff avant chaque commit."}`. Quand on écrit « conseil » dans la page, Cap Web appelle cette route ; si le serveur ne répond pas, il affiche « Le serveur ne répond pas : conseil indisponible. ». La route est testée dans `tests/conseil.test.js`.
 
 ## Les 3 modules de `public/js`
 
