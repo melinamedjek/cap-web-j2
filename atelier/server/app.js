@@ -12,6 +12,13 @@ const FICHIERS = {
   '/js/view.js': 'js/view.js'
 };
 
+// Conseils renvoyés par /api/conseil, un au hasard.
+const CONSEILS = [
+  'Fais un commit à chaque petite étape.',
+  'Lis le message d’erreur en entier avant de chercher ailleurs.',
+  'Relis ton diff avant chaque commit.'
+];
+
 // MIME corrects pour chaque fichier servi.
 const TYPES = {
   'index.html': 'text/html; charset=utf-8',
@@ -48,6 +55,14 @@ export function createApp({ publicDir, version = 'dev' } = {}) {
     } catch {
       res.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' });
       res.end('Non trouvé');
+      return;
+    }
+    // Un conseil tiré au hasard, en JSON.
+    if (chemin === '/api/conseil') {
+      const conseil = CONSEILS[Math.floor(Math.random() * CONSEILS.length)];
+      const corps = JSON.stringify({ conseil });
+      res.writeHead(200, { 'content-type': 'application/json; charset=utf-8', 'content-length': Buffer.byteLength(corps) });
+      res.end(methode === 'HEAD' ? '' : corps);
       return;
     }
     // Métadonnée de version fournie au démarrage.
