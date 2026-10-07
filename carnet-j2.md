@@ -91,3 +91,13 @@ Patch 2 corrigé (`abordage/mon-patch.patch`) : contrat remis à l'origine, `nor
 Chacun, une phrase : ce que vous savez faire ce soir et que vous ne saviez pas faire ce matin. Relisez votre positionnement : une notion est-elle passée de « à renforcer » à « à l'aise » ?
 Maitriya : J'ai compris la notion de test et son utilité en pratiquant. Ma maîtrise de Git s'est aussi un peu renforcée.
 Melina : j'ai des notions sur les tests et j'ai pu progresser sur git 
+
+## J3 · Terminer Cap Web
+
+### Étape 1 · Le troisième mot
+
+Prédiction : je pense que Cap Web va toujours afficher « deux mots », vu que « deux » est écrit à la main dans la réponse à « aide ».
+
+Vérification : effectivement, après l'ajout du troisième mot, « aide » dit encore « deux mots à moi » mais en cite trois.
+
+![« aide » dit encore « deux mots » avec trois mots](captures/j3-etape1-aide-avant.png)

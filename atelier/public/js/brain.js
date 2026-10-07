@@ -6,14 +6,15 @@ export const LIMITE = 400;
 
 const MOTS = {
   balcon: 'Un balcon offre une belle vue sur la rue.',
-  prairie: 'La prairie est couverte d’herbe et de fleurs.'
+  prairie: 'La prairie est couverte d’herbe et de fleurs.',
+  manger: 'J’adore manger.'
 };
 
 const motsConnus = Object.keys(MOTS).map((mot) => `« ${mot} »`).join(' et ');
 
 const REPONSES = {
   salut: 'Bonjour ! Je suis Cap Web, un assistant à règles. Écrivez « aide » pour voir ce que je sais faire.',
-  aide: `Je connais « salut », « aide », « test », et deux mots à moi : ${motsConnus}.`,
+  aide: `Je connais « salut », « aide », « test », et ${Object.keys(MOTS).length} mots à moi : ${motsConnus}.`,
   test: 'Test bien reçu : mes règles fonctionnent.',
   repli: 'Je n’ai pas compris ce message. Écrivez « aide » pour voir ce que je sais faire.'
 };
