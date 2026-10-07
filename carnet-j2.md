@@ -113,3 +113,7 @@ Sans le label : score de 93, avec l'alerte « Form elements do not have associat
 ![Lighthouse sans le label : 93](captures/j3-etape3-lighthouse-sans-label.png)
 
 Le label est remis.
+
+### Étape 5 · Plan B pour la version
+
+Avec une mauvaise adresse, le pied de page affiche « version indisponible » ; avec la bonne, il affiche « version dev ».
