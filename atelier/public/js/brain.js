@@ -77,3 +77,9 @@ export function synonyme(message) {
   const mot = message.trim().toLowerCase();
   return Object.hasOwn(SYNONYMES, mot) ? SYNONYMES[mot] : mot;
 }
+
+export function estMessage(m) {
+  return typeof m === 'object' && m !== null
+    && (m.role === 'user' || m.role === 'assistant')
+    && typeof m.text === 'string';
+}
