@@ -101,3 +101,15 @@ Prédiction : je pense que Cap Web va toujours afficher « deux mots », vu que 
 Vérification : effectivement, après l'ajout du troisième mot, « aide » dit encore « deux mots à moi » mais en cite trois.
 
 ![« aide » dit encore « deux mots » avec trois mots](captures/j3-etape1-aide-avant.png)
+
+### Étape 3 · L'accessibilité avec Lighthouse
+
+Avec le label : score Accessibilité de 100.
+
+![Lighthouse avec le label : 100](captures/j3-etape3-lighthouse-avec-label.png)
+
+Sans le label : score de 93, avec l'alerte « Form elements do not have associated labels » (la zone de message n'a plus de texte qui dit à quoi elle sert). Dans la console, une erreur rouge : `app.js` ne trouve plus le nombre de la limite, qui était dans le label.
+
+![Lighthouse sans le label : 93](captures/j3-etape3-lighthouse-sans-label.png)
+
+Le label est remis.
