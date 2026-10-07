@@ -133,3 +133,7 @@ Après : la page s'affiche sans erreur, et « version dev » revient en bas.
 ![npm test avec return true; : 3 tests rouges](captures/j3-etape14-tests-rouges.png)
 
 ![npm test avec le vrai code : tout est vert](captures/j3-etape14-tests-verts.png)
+
+### Bonus 16 · Le compteur prévient avant la limite
+
+![Compteur en alerte à 374 / 400, Lighthouse Accessibilité 100](captures/j3-etape16-compteur-lighthouse.png)
