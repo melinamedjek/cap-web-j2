@@ -18,7 +18,7 @@ Récupérez le projet, puis entrez dans le dossier `atelier` :
 
 ```powershell
 git clone https://github.com/melinamedjek/cap-web-j2.git
-cd cap-web-j2telier
+cd cap-web-j2\atelier
 ```
 
 Installez les outils :
